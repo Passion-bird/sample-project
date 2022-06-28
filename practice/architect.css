@@ -1,0 +1,175 @@
+body {
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    box-sizing: inherit;
+}
+
+.nav {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 10pt;
+    position: fixed;
+    top: 0;
+    float: left;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.nav a {
+    padding: 10pt;
+    text-decoration: none;
+    color: black;
+}
+
+
+.right-menu {
+    float: right;
+
+}
+
+.width {
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+.img1 {
+    width: 1500px;
+    
+}
+.img-container{
+    position: relative;
+}
+
+.img-text {
+position: absolute;
+top:50%;
+left:50%;
+transform: translate(-50%,-50%); 
+text-align: center;
+
+}
+h1{
+    color: white;
+font-weight: 400;
+font-size: 36px;
+
+}
+
+span {
+    background-color: black;
+    padding: 8px;
+    font-weight: bold;
+    
+}
+
+.projects::after, .projects::before{
+    content:"";
+    display: table;
+    clear:both;
+}
+
+.head2{
+    border-bottom: 2px ;
+}
+
+img {
+    width: 100%;
+}
+   
+.img-float {
+    float:left;
+    width: 49%; 
+    padding-right: 8px;
+    vertical-align: center;
+    position: relative;
+}
+p {
+    position: absolute;
+    top: 0px;
+    lef: 0px;
+    vertical-align: middle;
+    padding: 10px;
+    background-color: black;
+    color:white;
+    max-width: 40%;
+    overflow: hidden;
+}
+
+.gal-flex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+      
+}
+ 
+.img-flex  {
+    width: 32%;  
+    padding-right: 8px;
+    position: relative;
+}
+.gal-grid {
+    display: grid;
+    gap: 8px;
+    grid-template-columns: auto auto auto auto;
+    
+}
+
+.img-grid{
+    position: relative;
+    padding-right: px;
+    width: 100%;
+}
+
+.gal-2{
+    float: left;
+    width: 100%;
+     
+    
+}
+        .img-4{
+    float: right;
+    width: 75%;
+    padding: 1px;
+}
+
+.img-3, .img-4{
+    width: 50%;
+    position: relative;
+    padding: 10px;
+       
+   
+
+}
+.p1 {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    color:aliceblue;
+    background-color:black;
+    max-width: 20%;
+    overflow:hidden;
+    
+}
+.p2{
+    width:300px;
+    height: 100px;
+    opacity: ;
+    background-color: rgb(224, 194, 56);
+    position: absolute;
+    left:-50px;
+    top: 70px;
+
+
+}

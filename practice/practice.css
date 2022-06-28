@@ -1,0 +1,643 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: "lato", sans-serif;
+
+}
+
+.img1 {
+	display: none;
+}
+
+.ul {
+	background-color: black;
+	overflow: auto;
+	list-style-type: none;
+	box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+	padding: 0;
+	margin: 0;
+	display: block;
+}
+
+.top {
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	width: 100%;
+
+}
+
+.li {
+	float: left;
+}
+
+
+li a {
+	text-decoration: none;
+	color: white;
+	padding: 10px 20px;
+	text-align: center;
+	position: relative;
+	display: block;
+	font-size: 15px;
+
+}
+
+.ul li a:hover {
+	background-color: #eee;
+	color: black;
+}
+
+@media screen and (max-width: 600px) {
+	.ul li {
+		float: none;
+	}
+}
+
+.dropdown-content {
+	background-color: white;
+	width: 150px;
+	padding: 0;
+	position: absolute;
+	display: none;
+	z-index: 10;
+	box-shadow: 0px 8px 16px 0px #ccc;
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	text-align: left;
+}
+
+.dropdown-content a:hover {
+	background-color: black;
+	color: white;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.img1 {
+	vertical-align: middle;
+	width: 100%;
+	height: auto;
+}
+
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 35px;
+}
+
+.img-container {
+	position: relative;
+	display: block;
+
+}
+
+.content {
+	color: white;
+	padding-top: 32px !important;
+	padding-bottom: 32px !important;
+	text-align: center;
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transform: translate(-50%, 0%);
+
+}
+
+.main1 {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 64px !important;
+	padding-bottom: 64px !important;
+	background-color: white;
+	overflow: hidden;
+	display: block;
+	padding: 0.01em 16px;
+}
+
+.para {
+	text-align: justify;
+
+
+}
+
+.card {
+	float: left;
+	width: 33.33%;
+
+}
+
+.card-1 {
+	padding-top: 32px !important;
+	padding-bottom: 32px !important;
+}
+
+.ul::before,
+.ul::after,
+.main1::before,
+.main1::after,
+.card-1::after,
+.card-1::before,
+.content2::before,
+.content2::after,
+.img-text::after,
+.img-text::before,
+.main2::before,
+.main2::after,
+.main3::before,
+.main3::after,
+.address::before,
+.address::after,
+.details::after,
+.details::before,
+.form1::after,
+.form1::before,
+.heading3::after,
+.heading3::before {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.img3 {
+	width: 60%;
+	border-radius: 6px;
+	margin-bottom: 16px !important;
+}
+
+.img4:hover {
+	opacity: 0.7;
+}
+
+@media screen and (max-width:400px) {
+	.card {
+		float: none;
+		width: 100%
+	}
+}
+
+.main2 {
+	background-color: black;
+	color: white;
+
+}
+
+.content2 {
+	padding-top: 64px !important;
+	padding-bottom: 64px !important;
+	padding: 0.01em 16px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.big-heading {
+	margin: 10px 0;
+	text-align: center;
+	font-weight: 400;
+	letter-spacing: 4px;
+	font-size: 30px;
+	line-height: 1.5;
+}
+
+.small {
+	opacity: 0.6;
+	text-align: center;
+	font-size: 15px;
+	line-height: 1.5;
+}
+
+.list2 {
+	list-style-type: none;
+	background-color: white !important;
+	color: #757575;
+	border: 1px solid #ccc;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+
+
+}
+
+.box {
+	padding: 10px;
+	border-bottom: 1px solid #ccc;
+
+}
+
+.sold {
+	background-color: #f44336;
+	color: white;
+	padding: 3px;
+	margin-left: 16px;
+	display: inline-block;
+	padding-left: 8px;
+	padding-right: 8px;
+	text-align: center;
+}
+
+.sold3 {
+	background-color: black;
+	border-radius: 50%;
+	padding: 2px 7px;
+	float: right;
+	margin-right: 16px;
+	color: white;
+}
+
+li:last-child {
+	border: none;
+
+}
+
+.img-text {
+	padding-top: 32px !important;
+	padding-bottom: 32px !important;
+	margin: 0 -7px;
+
+
+}
+
+.img-text>.img4 {
+	padding: 0 8px;
+
+}
+
+.img4 {
+	width: 100%;
+	vertical-align: middle;
+}
+
+.card2,
+.details {
+	margin-bottom: 16px !important;
+	float: left;
+	padding: 8px;
+	width: 33.33333%;
+
+
+}
+
+.card3 {
+	background-color: white;
+	color: black;
+	padding: 10px 16px;
+	padding-bottom: 45px;
+	font-size: 15px;
+	line-height: 1.5;
+
+}
+
+
+@media screen and (max-width: 601px) .img,
+.card {
+	width: 100%;
+}
+
+@media screen and (max-width: 601px) .card {
+	width: 100%;
+}
+
+.button {
+	border: none;
+	padding: 8px 16px;
+	background-color: black;
+	text-align: center;
+	cursor: pointer;
+	color: white;
+}
+
+.button:hover {
+	background-color: #ccc;
+	color: black;
+}
+
+.main3 {
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 64px !important;
+	padding-bottom: 64px !important;
+
+}
+
+.heading3 {
+	text-align: center;
+}
+
+.heading3>h1 {
+	font-weight: 400;
+	letter-spacing: 4px;
+}
+
+
+.details {
+	text-align: left;
+	width: 49.99999%;
+	float: left;
+}
+
+.address {
+	padding-top: 32px !important;
+	padding-bottom: 32px !important;
+}
+
+
+.name {
+	float: left;
+	width: 50%;
+
+}
+
+.name>input {
+	padding: 8px;
+	margin: 0 12px 8px 0px;
+	border: 1px solid #ccc !important;
+	width: 100%;
+}
+
+.button {
+	padding: 8px 20px;
+	float: right;
+	display: block;
+	margin-top: 8px;
+
+}
+
+.name3 {
+	padding: 8px;
+	border: 1px solid #ccc !important;
+	width: 100%;
+}
+
+h6 {
+	text-align: center;
+	font-size: 15px !important;
+	line-height: 1.5;
+}
+
+.footer-icons {
+	padding: 10px;
+	text-align: center;
+}
+
+.fa {
+	padding: 20px;
+	font-size: 30px;
+	width: 50px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;
+	border-radius: %;
+}
+
+.fa:hover {
+	opacity: 0.7;
+}
+
+.fa-facebook {
+	background: #3B5998;
+	color: white;
+
+}
+
+.fa-twitter {
+	background: #55ACEE;
+	color: white;
+
+}
+
+.fa-google {
+	background: #dd4b39;
+	color: white;
+	padding: 10px;
+	font-size: 30px;
+	width: 50px;
+	text-align: center;
+	text-decoration: none;
+	margin: 0;
+
+}
+
+.fa-linkedin {
+	background: #007bb5;
+	color: white;
+}
+
+.fa-youtube {
+	background: #bb0000;
+	color: white;
+}
+
+.fa-instagram {
+	background: #125688;
+	color: white;
+}
+
+.fa-pinterest {
+	background: #cb2027;
+	color: white;
+}
+
+.fa-snapchat-ghost {
+	background: #fffc00;
+	color: white;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-skype {
+	background: #00aff0;
+	color: white;
+}
+
+.fa-android {
+	background: #a4c639;
+	color: white;
+}
+
+.fa-dribbble {
+	background: #ea4c89;
+	color: white;
+}
+
+.fa-vimeo {
+	background: #45bbff;
+	color: white;
+}
+
+.fa-tumblr {
+	background: #2c4762;
+	color: white;
+}
+
+.fa-vine {
+	background: #00b489;
+	color: white;
+}
+
+.fa-foursquare {
+	background: #45bbff;
+	color: white;
+}
+
+.fa-stumbleupon {
+	background: #eb4924;
+	color: white;
+}
+
+.fa-flickr {
+	background: #f40083;
+	color: white;
+}
+
+.fa-yahoo {
+	background: #430297;
+	color: white;
+}
+
+.fa-soundcloud {
+	background: #ff5500;
+	color: white;
+}
+
+.fa-reddit {
+	background: #ff5700;
+	color: white;
+}
+
+.fa-rss {
+	background: #ff6600;
+	color: white;
+}
+
+.buy-form {
+	border: 2px solid rgb(199, 199, 199);
+		z-index: 3;
+		display: none;
+		padding-top: 100px;
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		background-color: rgb(204, 204, 204);
+		
+		
+	
+	}
+
+	.animate {
+		animation: animatetop 0.4s;
+		width: 800px;
+		position: relative;
+		margin: auto;
+		background-color: #fff;
+		position: relative;
+		padding: 0;
+		outline: 0;
+		}
+		@keyframes .animate 0% {
+			top: -300px;
+			opacity: 0;
+		  }
+		@keyframes .animate 0% 100% {
+			top: 0;
+			opacity: 1;
+		  }
+.tickets {
+	background-color: rgb(98, 15, 167);
+	padding: 20px;
+	text-align: center;
+	letter-spacing: 4px;
+	font-weight: 400;
+	color: rgb(255, 253, 253);
+	line-height: 1.5;
+
+}
+
+
+.x {
+	padding: 8px 16px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: white;
+	font-size: 24px;
+
+}
+
+.x:hover {
+	background-color: #ff3232;
+}
+
+.head::after,
+.head::before,
+.form2::after,
+.form2::before {
+	display: table;
+	content: "";
+	clear: both;
+
+}
+
+.form2 {
+	padding: 10px;
+	color: black;
+	background-color: white;
+}
+
+input {
+	border: 2px solid rgb(124, 124, 124);
+	opacity: 0.7;
+	padding: 10px;
+	width: 100%;
+	background-color: white;
+	color: black;
+}
+
+.pay {
+	background-color: rgb(15, 167, 109);
+	color: azure;
+	padding: 20px;
+	width: 100%;
+	margin-top: 16px !important;
+	margin-bottom: 16px !important;
+	cursor: pointer;
+	border: none;
+}
+
+.close {
+	background-color: rgb(245, 43, 43);
+	padding: 10px 20px;
+	border: none;
+	color: whitesmoke;
+	cursor: pointer;
+}
+
+.pay:hover {
+	background-color: rgb(16, 150, 98);
+	font-weight: bold;
+}
+
+.close:hover {
+	background-color: rgb(209, 209, 209);
+	color: black;
+}
+
+.right {
+	float: right !important;
+}
+
+.right a:hover {
+	color: rgb(255, 174, 0);
+}
