@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>practice.css Template</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="practice.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<!--navigation bar top-->
+	<div id="home" class="top">
+		<ul class="ul">
+			<li class="li"><a href="#home">HOME</a></li>
+			<li class="li"><a href="#band">BAND</a></li>
+			<li class="li"><a href="#tour">TOUR</a></li>
+			<li class="li" style="float:right"><a href="#" class="fa fa-google"></a></li>
+
+			<li class="dropdown li">
+				<a href="#">MORE</a>
+				<div class="dropdown-content">
+					<a href="#">Merchandise</a>
+					<a href="#">Extra</a>
+					<a href="#">Media</a>
+				</div>
+				<!--<li  style="float:right;" "width:10px; height:10px;" overflow:"hidden;"><img src="C:\Users\Hi\OneDrive\Documents\WEB DEVELOPEMENT\icons/search.png">CONTACT</a></li>
+	-->
+			</li>
+		</ul>
+
+	</div>
+
+	<!--section1-->
+
+	<div class="container" style="max-width: 2000px;">
+		<div class="img-container">
+			<img class="img1" src="la.jpg" alt="new">
+			<img class="img1" src="ny.jpg" alt="new">
+			<img class="img1" src="chicago.jpg" alt="new">
+			<div class="content">
+				<h2 style="font-weight:5;">Pappankulam</h2>
+				<h5>We had best night at Pappankulam!</h5>
+			</div>
+		</div>
+	</div>
+	<script>
+		var myIndex = 0;
+		carousel();
+
+		function carousel() {
+			var i;
+			var x = document.getElementsByClassName("img1");
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+			myIndex++;
+			if (myIndex > x.length) { myIndex = 1 }
+			x[myIndex - 1].style.display = "block";
+			setTimeout(carousel, 2000); // Change image every 2 seconds
+		}
+	</script>
+
+
+	<!--section2-->
+
+	<div id="band" class="main1" style="max-width: 800px;">
+		<h1 style="letter-spacing:6px; font-weight:400; margin: 10px 0;">THE BAND</h1>
+		<p style="opacity:0.6; font-size: 15px;"><i>we love music</i></p>
+
+
+		<p class="para">We have created a fictional band website. Lorem ipsum dolor sit amet,
+			consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+			labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+			commodo consequat. Duis aute irure dolor in reprehenderit in
+			voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+		</p>
+
+		<div class="card-1">
+			<div class="card">
+				<p>Name</p>
+				<img class="img3" src="band.jpg" alt="new">
+			</div>
+
+			<div class="card">
+				<p>Name</p>
+				<img class="img3" src="band.jpg" alt="new">
+			</div>
+
+			<div class="card">
+				<p>Name</p>
+				<img class="img3" src="band.jpg" alt="new">
+			</div>
+		</div>
+	</div>
+
+	<!--section3-->
+
+	<div id="tour" class="main2">
+		<div class="content2" style="max-width:800px;">
+			<h1 class="big-heading">TOUR DATES</h1>
+			<p class="small"><i>Remember to book your tickets!</i>
+			<p>
+			<p></p>
+			<br>
+			<ul class="list2">
+				<li class="box">September<span class="sold">sold out</span></li>
+				<li class="box">October<span class="sold">sold out</span></li>
+				<li class="box">November<span class="sold3">3</span></li>
+			</ul>
+
+			<div class="img-text">
+				<div class="card2">
+					<img class="img4" src="newyork.jpg" alt="new">
+
+					<div class="card3">
+						<h4>New York</h4>
+						<h5 style="opacity:0.6;">Fri 27 Nov 2016</h5>
+						<p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+
+						<button class="button">Buy Tickets</button>
+					</div>
+				</div>
+
+				<div class="card2">
+					<img class="img4" src="paris.jpg" alt="new">
+
+					<div class="card3">
+						<h4>Paris</h4>
+						<h5 style="opacity:0.6;">Sat 28 Nov 2016</h5>
+
+						<p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+						<button class="button y" onclick="document.getElementById('buy-form').style.display='block'">Buy Tickets</button>
+						
+					</div>
+				</div>
+
+
+				<div class="card2">
+					<img class="img4" src="sanfran.jpg" alt="new">
+
+					<div class="card3">
+						<h4>San Francisco</h4>
+						<h5 style="opacity:0.6;">Sun 29 Nov 2016</h5>
+
+						<p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+						<button class="button">Buy Tickets</button>
+					</div>
+				</div>
+			</div>
+			<div class="buy-form " style="display: bloc;">
+				<div class="animate">
+					<header class="head">
+					<span class="x y" onclick="document.getElementById('buy-form').style.display='none'">x</span>
+					<div class="tickets">
+						<h2>
+							<i class="fa fa-suitcase w3-margin-right"></i>
+							Tickets
+							</h1>
+					</div>
+					</header>
+					<div class="form2">
+					<form>
+						<label for="person">Tickets,$15 per person </label><br><br>
+						<input type="text" placeholder="how many?" id="person"><br><br>
+
+						<label for="email">Send To</label><br><br>
+						<input type="email" placeholder="Enter email" id="email">
+					</form> <br>
+
+					<button class="pay">PAY</button><br>
+
+					<button class="close y" onclick="document.getElementById('buy-form').style.display='none'">Close</button>
+				
+					<p class="right">Need&nbsp</ndnsp><a href="#help">help?</a></p>
+					
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="contact" class="main3" style="max-width: 800px;">
+		<div class="heading3">
+			<h1>CONTACT</h1>
+			<p style="opacity:0.6"><i>Fan? Drop a note!</i></p>
+		</div>
+		<div class="address">
+			<div class="details">
+				<p>Chicago,US</p>
+				<p>Phone:+00 151515
+				<p>
+				<p>Email:mail@mail.com</p>
+			</div>
+
+			<div class="details">
+				<form action="/action_page.php" target="_blank">
+					<div class="name">
+						<input type="text" name="Name" placeholder="Name">
+					</div>
+					<div class="name" style="padding-left: 8px;">
+						<input type="email" name="email" placeholder="Email">
+					</div>
+					<input class="name3" type="text" name="Name" placeholder="Message">
+				</form>
+
+				<button class="button">send</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="map-image">
+		<img src="map.jpg" style="width:100%">
+	</div>
+	<br>
+	<footer>
+		<div class="footer-icons">
+			<a href="#" class="fa fa-facebook"></a>
+			<a href="#" class="fa fa-twitter"></a>
+			<a href="#" class="fa fa-linkedin"></a>
+			<a href="#" class="fa fa-youtube"></a>
+			<a href="#" class="fa fa-instagram"></a>
+			<!--
+<a href="#" class="fa fa-pinterest"></a>
+<a href="#" class="fa fa-snapchat-ghost"></a>
+<a href="#" class="fa fa-skype"></a>
+<a href="#" class="fa fa-android"></a>
+<a href="#" class="fa fa-dribbble"></a>
+<a href="#" class="fa fa-vimeo"></a>
+<a href="#" class="fa fa-tumblr"></a>
+<a href="#" class="fa fa-vine"></a>
+<a href="#" class="fa fa-foursquare"></a>
+<a href="#" class="fa fa-stumbleupon"></a>
+<a href="#" class="fa fa-flickr"></a>
+<a href="#" class="fa fa-yahoo"></a>
+<a href="#" class="fa fa-reddit"></a>
+<a href="#" class="fa fa-rss"></a>
+<a href="#" class="fa fa-google"></a>
+-->
+			<h6>Powered by w3.css</h6>
+		</div>
+	</footer>
+	<br>
+	
+<script>
+let interestRate = 0.3;
+interestRate = 1;//let value can be reasign.
+console.log(interestRate);
+
+const value = 3;//const value cannot be reasign.
+console.log(value);
+
+//primative types
+let name = "ellaidhurai";//string literal
+let age = 26;// number literal
+let isApproved = true;// boolean literal
+let firstName = undefined;//undefined is a type and is also a value. 
+let select = null;//object
+
+
+//reference types - objects
+let person = { //object are defined by curly braces it is called as object literal syntax.
+	name: 'ed',
+	age: 26
+};
+//access value by
+//Dot notation
+person.name = 'el';
+
+//Bracket notation
+person ['name'] = 'ef';
+
+//selection
+let selection = 'na';
+
+console.log(selection);
+
+//reference types - array is data structure. 
+let selectColor = ['red','blue','green'];
+selectColor[2] = 1;//array value reasined.
+console.log(selectColor);
+
+
+// functions - is used for performing task and calculations 
+function greet(name) {
+	console.log('hello' + ' ' + name);
+}
+
+greet("ellai");
+greet("sumi");
+
+//calculations
+function square(number) {
+	return number * number;
+}
+
+console.log(square(3))
+
+</script>
+</body>
+
+</html>

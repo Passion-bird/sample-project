@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, intial-scale=1">
+<title>responsive gallery></title>
+
+<style>
+
+ * {
+	box-sizing: border-box;
+}
+
+body {
+  	margin: 0;
+  	font-family: Arial;
+}
+.header {
+  	text-align: center;
+ 	padding: 32px;
+}
+
+.img {
+	display: flex;
+	flex-wrap: wrap; /*we need to wrap content.then only it looks like gallery*/
+	padding: 5px;
+}
+
+.column {
+	flex: 25%; /* total space is divided for each columns using flex*/
+	max-width: 25%; /*The max-width property defines the maximum width of an element. If the content is larger than the maximum width, it will automatically change the height of the element. If the content is smaller than the maximum width, the max-width property has no effect.*/
+	padding: 5px;
+}
+.column img {
+	margin-top: 8px;
+  	vertical-align: middle;
+	
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Header -->
+<div class="header">
+  <h1>Responsive Image Gallery</h1>
+  <p>Resize the browser window to see the responsive effect.</p>
+</div>
+
+
+<div class="img">
+
+<div class="column">
+<img src="C:\Users\Hi\OneDrive\Documents\WEB DEVELOPEMENT\HTML\responsive projects/book1.jpg" style="width:100%">
+<img src="C:\Users\Hi\OneDrive\Documents\WEB DEVELOPEMENT\HTML\responsive projects/book2.jpg" style="width:100%">
+<img src="C:\Users\Hi\OneDrive\Documents\WEB DEVELOPEMENT\HTML\responsive projects/book3.jpg" style="width:100%">
+<img src="C:\Users\Hi\OneDrive\Documents\WEB DEVELOPEMENT\HTML\responsive projects/laptop.webp" style="width:100%">
+</div>
+
+
+<div class="column">
+<img src="C:\Users\Hi\OneDrive\Documents\WEB DEVELOPEMENT\HTML\responsive projects/laptop.webp" style="width:100%">
+<img src="C:\Users\Hi\OneDrive\Documents\WEB DEVELOPEMENT\HTML\responsive projects/book2.jpg" style="width:100%">
+<img src="C:\Users\Hi\OneDrive\Documents\WEB DEVELOPEMENT\HTML\responsive projects/book3.jpg" style="width:100%">
+<img src="C:\Users\Hi\OneDrive\Documents\WEB DEVELOPEMENT\HTML\responsive projects/book1.jpg" style="width:100%">
+</div>
+
+
+<div class="column">
+<img src="C:\Users\Hi\OneDrive\Documents\WEB DEVELOPEMENT\HTML\responsive projects/book1.jpg" style="width:100%">
+<img src="C:\Users\Hi\OneDrive\Documents\WEB DEVELOPEMENT\HTML\responsive projects/book2.jpg" style="width:100%">
+<img src="C:\Users\Hi\OneDrive\Documents\WEB DEVELOPEMENT\HTML\responsive projects/book3.jpg" style="width:100%">
+<img src="C:\Users\Hi\OneDrive\Documents\WEB DEVELOPEMENT\HTML\responsive projects/laptop.webp" style="width:100%">
+</div>
+
+
+
+
+<div class="column">
+<img src="C:\Users\Hi\OneDrive\Documents\WEB DEVELOPEMENT\HTML\responsive projects/laptop.webp" style="width:100%">
+<img src="C:\Users\Hi\OneDrive\Documents\WEB DEVELOPEMENT\HTML\responsive projects/book2.jpg" style="width:100%">
+<img src="C:\Users\Hi\OneDrive\Documents\WEB DEVELOPEMENT\HTML\responsive projects/book3.jpg" style="width:100%">
+<img src="C:\Users\Hi\OneDrive\Documents\WEB DEVELOPEMENT\HTML\responsive projects/book1.jpg" style="width:100%">
+</div>
+
+
+</div>
+
+
+</body>
+</html>
